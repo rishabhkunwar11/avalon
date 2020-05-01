@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+  <title>AVALON META</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://www.avalonmeta.com/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/7e39748b5b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <section id="topbox">
+    <div class="container-fluid">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img
+            src="data:image/png;base64,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"
+            width="90" height="105" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                mentors
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#varun">VARUN MAYYA</a>
+                <a class="dropdown-item" href="#shashank">SHASHANK UDUPA</a>
+                <a class="dropdown-item" href="#abhinav">ABHINAV ARORA</a>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#thirdbox">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="row">
+
+        <div class="col-lg-6 image ">
+          <img class="phone-img" src="https://www.avalonmeta.com/images/1-p-800.png" alt="iphone-mockup">
+        </div>
+        <div class="col-lg-6 heading-text">
+          <h1 class="htext">THE FUTURE OF EDUCATION IS HERE</h1>
+          <button type="button" class="download-button btn btn-outline-light btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="download-button btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="teachers">
+
+
+         <div class="row" id="varun">
+              <div class="col-lg-6">
+                <img class="var" src="https://mlcfk4eggqht.i.optimole.com/kpoWK1o-oXM0Eh6k/w:auto/h:auto/q:auto/https://i2.wp.com/foxbound.io/wp-content/uploads/2019/08/Varun-Mayya.png?fit=268%2C262&ssl=1" alt="">
+              </div>
+              <div class="col-lg-6 inf">
+                   <h3>your passion and others’ belief will keep you going in the entrepreneurship journey #WeBelieveYouCan</h3>
+                   <br>
+                   <p>
+
+                     Varun Mayya’s first official tryst with entrepreneurship was in college when he and his friends started up a t-shirt manufacturing business called SIZR. Later he began digital freelancing for clients in the United States, which is when he understood the value of price parity. But he found no excitement in what he was doing, so after saving up some money, he built Jobspire, a recruitment platform. They became one of the youngest teams to raise venture capital of Rs 1.7 crore even before they graduated, and scaled the company to serve 4 million requests in 2016. In 2017, they sold Jobspire to a New-York-based company.
+                   </p>
+                   <p>
+                     Following that, he started Avalon Labs 2017, with the primary goal of making it a sandbox for his ideas. Varun teamed up with Shashank Udupa, a very driven investment banker, and together, they did anything and everything to build sizeable cash reserves to incubate, invest in and partner with early-stage tech startups. Within two years, they’ve scaled to 50 employees, made six global investments, and are now focusing on early-stage SaaS investments.
+                   </p>
+              </div>
+            </div>
+              <div class="row" id="shashank">
+
+                <div class="col-lg-6">
+
+                        <img class="sas" src="https://barepisodes.com/assets/speaker/speaker13-b501b37239382fae166342ae2fe789a47a3d7add0db62904640fbe4756f88d08.png" alt="">
+
+
+                </div>
+
+                <div class="col-lg-6">
+                  <p>
+
+                    Co-founded and handles Operations, Finance and Legal for Enkidu token. Enkidu has been registered in Singapore as well as Estonia. Sits on the Advisory board of 2 upcoming ICOs. One of the first Indian's to Launch an ICO with more than 3 years of experience in the Blockchain space.
+                  Ex-IIFL investment banker, $3.5Bn stocklisted diversified financial services company.
+                  Closed several multi-million dollar deals during his stint at IIFL, including 2 Series E companies.
+                  Masters in International Management from Strathclyde, Glasgow.
+                  Co-founder, Avalon Labs.
+                  Hodler
+                  </p>
+
+
+                </div>
+            </div>
+
+            <div class="row" id="abhinav">
+
+              <div class="col-lg-6">
+                      <img class="ab" src="data:image/jpeg;base64,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" alt="">
+              </div>
+
+              <div class="col-lg-6">
+
+                  <p>
+                    Began his career as an independent native advertising consultant. Worked across multiple remote and on-site teams.
+
+This gave him an unparalleled insight into cyberpsychology.
+
+During his career, he has built and led midsize growth teams across sectors like HealthTech, FMCG, SaaS and Blockchain.
+
+he is addicted to understanding what makes humans tick online. When he is not working you'll find him obsessing over cutting calories!
+                  </p>
+
+              </div>
+          </div>
+
+
+
+  </section>
+
+
+
+  <section id="thirdbox">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="logo"
+            src="data:image/png;base64,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"
+            class="d-block w-100" alt="...">
+          <h1>WHAT IS AVALON META?</h1>
+          <p class="one">The higher education system in India is broken.</p>
+          <p class="one">Avalon Meta is a full digital replacement for the existing system.</p>
+          <br>
+
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/1-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">FREE NEXT GENERATION SYLLABUS & CONTENT</h4>
+              <p>
+                Live and scheduled classes with syllabus and content
+                that rivals the best colleges across the world. Practical and up to date,
+                each of these digital skills make you highly employable and relevant to the real world.
+                Taught by entertaining experts and teachers who make learning fun again!
+              </p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/2-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">Alumni network #AvalonArmy</h4>
+              <p>
+                The main attractant of premier institutions like Ivy League is their alumni network. The Avalon Army - a non-geographically bound community, is a game changer in this regard.
+              </p>
+              <br>
+              <p>
+                Once you gain access into it, you can tap into various opportunities, with access to jobs, intros and funding available at your fingertips.
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/mentor2-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">College seniors & mentorships</h4>
+              <p>
+                Every learner deserves a mentor who can not only lead the way and help out when faced with hard situations.
+              </p>
+              <br>
+              <p>
+                Avalon Meta allows every single learner to be matched with a personal mentor. With progression, a learner can become a mentor too, restarting the virtuous cycle.
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/4-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">Fests, competitions, Battlecups</h4>
+              <p>
+                The most fun parts of college are the interactive fests, where students compete with each other with more intent than any exam
+              </p>
+              <br>
+              <p>
+                Avalon Meta has incorporated the concept of fests and Battlecups, where the best students can compete online on a variety of educational tasks. Virtuals exams are now open book, and attempted in teams.
+              </p>
+              <br>
+              <p>
+                Find your crew and get competing!
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/5-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">Bulletin board and discussions</h4>
+              <p>
+                Bulletin boards are a personalized social feed for expert insights, experiences, opportunities, referrals, networking and more.
+              </p>
+              <br>
+              <p>
+                The key to a successful online learning community is an environment rich with experienced Alumni and students helping each other out.
+              </p>
+              <p>
+                Prepare to experience a community like no other.
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/6-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">A new activity based GPA system AND central placement network</h4>
+              <p>
+                Technology has evolved.
+              </p>
+              <br>
+              <p>
+                Resumes? Not so much.
+              </p>
+              <p>
+                AvalonMeta introduces an all new activity-based GPA system that grades you depending on your activity on the platform. Learn, share your knowledge on the platform and get rewarded with Meta points that will increase your likelihood of
+                landing a job or a gig project. Say goodbye to old boring resumes. Show the world what you’ve got!
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/gaming_thing.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6 sim">
+              <h4 class="heading1 ">Simulators</h4>
+              <p>
+                AvalonMeta features an array of multiplayer custom games (from mock Facebook ad consoles to Stock market simulators) that will help you refine your skills with others while keeping it fun!
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/8-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">Offline events</h4>
+              <p>
+                All our Battlecups end in a year-end, India-wide conference where the leaderboard competes in a variety of competitions live for a grand prize.
+              </p>
+              <br>
+              <p>
+                A gala of a fest with most of our alumni network all in one place! With top CEOs, industry leaders, VCs and press under one roof, the only goal is to have fun and get ahead!
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/itemz.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">INVENTORY AND DROPS</h4>
+              <p>
+                Avalon Meta is not just a gamified educational platform, it takes it one notch higher.
+              </p>
+              <br>
+              <p>
+                Earn digital drops, with tiers ranging from common to ultra-rare after every episode, valuable comment, thread or Battlecup victory.
+
+              </p>
+              <p>
+                Trade with others or sell your items on the trading market for real money!
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="cimage" src="https://www.avalonmeta.com/images/meta-pass_01-p-800.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-6">
+              <h4 class="heading1 ">Metapass</h4>
+              <p>
+                Metapass is a premium offering that lets anyone be a part of Avalon Meta with higher stakes.
+              </p>
+              <br>
+              <p>
+                From better item drops, custom skins, unlimited mentorships and access to the trading store where you can use your hard earned inventory to make real money in a Blockchain based auction market!
+
+
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="courses">
+    <h1>TOPICS COVERED INCLUDE:</h1>
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 download-button1">
+      <div class= "b" >
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">BASICS</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">MANAGEMENT</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">MARKETING</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">FINANCE</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">3D FILM MAKING</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">ROBOTICS</button>
+      </div class= "b">
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">WEB DESIGN</button>
+      </div>
+      <div class= "b">
+         <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">MENTAL HEALTH</button>
+      </div>
+
+
+    </div>
+
+
+     <div class="col-lg-6 col-sm-12 download-button2">
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">BUISNESS</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">CODE</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">SALES</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">BLOCKCHAIN</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">GAME DESIGN</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">UI/UX DESIGN</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">STATISTICS</button>
+       </div>
+       <div class= "b">
+          <button type="button" class="btn1 btn btn-outline-primary btn-lg btn-block">COPYWRITING</button>
+       </div>
+
+
+     </div>
+  </div>
+
+
+
+
+
+  </section>
+
+  <footer id="footer">
+     <a href="https://www.avalonmeta.com/">  <i class=" social fab fa-chrome"></i></a>
+     <a href="https://www.facebook.com/Avalon-Meta-102495984740033/">  <i class=" social fab fa-facebook-f "></i></a>
+
+     <a href="https://www.instagram.com/avalon_meta/"><i class=" social fab fa-instagram "></i></a>
+  <a href="mailto:hello@avalonmeta.com"><i class=" social fas fa-envelope "></i></a>
+    <p>© Copyright 2020 avalonmeta</p>
+
+  </footer>
+</body>
+
+</html>

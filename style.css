@@ -1,0 +1,263 @@
+body
+{
+  margin: 0;
+  background-color: black;
+}
+#topbox
+{
+  background-color: black;
+}
+#topbox h1{
+  font-family: "Montserrat";
+  font-weight: bolder;
+  color: #ffffdd;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.phone-img
+{
+  width: 85%;
+  transform: rotate(-20deg);
+}
+
+
+.container-fluid
+{
+  padding: 2% 15% 6%;
+}
+.navbar-brand{
+  font-style: "Ubuntu";
+  font-weight: 2rem;
+  font-weight: bold;
+}
+.navbar
+{
+ padding-bottom: 4rem;
+}
+.navbar-nav
+{
+  padding-left: 30px;
+}
+.nav-item
+{
+    margin: 0 20px;
+}
+.nav-link
+{
+  font-style: "Montserrat";
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.dropdown-menu
+{
+  padding: 0;
+  margin: 0;
+  border-style: outset;
+  border-width: thin;
+  border-color: #fff;
+}
+.dropdown-item
+{
+  background-color: black;
+  color: #fff;
+
+}
+.dropdown-item:hover
+{
+  color: grey;
+}
+.download-button
+{
+  margin: 4% 3% 5% 4%;
+}
+.download-button1
+{
+  padding-left: 300px;
+  margin: 0;
+}
+.download-button2
+{
+  padding-right: 300px;
+  margin: 0;
+}
+.b
+{
+    padding-top: 1rem;
+    margin: 0;
+}
+.btn1
+{
+  padding: 10px 2.5rem 10px 2.5rem;
+}
+.htext
+{
+  margin-top: 10px;
+  margin-left: 1.2rem;
+}
+.heading-text
+{
+  text-align: center;
+  margin-top: 2.5rem;
+}
+#thirdbox
+{
+  background-color: black;
+  text-align: center;
+  color: #ffffdd;
+}
+#thirdbox h1
+{
+
+  font-size: 50px;
+  line-height: 100px;
+  font-weight: 300;
+}
+#thirdbox p
+{
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 200;
+}
+.logo
+{
+  width: 20%;
+}
+.aligncenter
+{
+  text-align: center;
+}
+.carousel-item
+{
+  padding: 7% 15%;
+}
+#thirdbox h4
+{
+  font-family: Apexmk2, sans-serif;
+  margin-top: 5%;
+  margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+}
+.one
+{
+  font-family: Exo, sans-serif;
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+#thirdbox p{
+    font-family: Exo, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.cimage
+{
+  width: 75%;
+}
+.sim
+{
+  margin-top: 50px;
+}
+.heading1
+{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#courses
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+  text-align: center;
+}
+#courses  h1{
+
+  color: #ffffdd;
+  padding-bottom: 50px;
+
+}
+.row
+{
+  margin: 0;
+  padding-top: 2rem;
+}
+#footer
+{
+  background-color: black;
+  color: #ffffdd;
+  text-align: center;
+}
+.social{
+  padding: 35px 18px;
+  color: #ffffdd;
+}
+#teachers
+{
+  color: #ffffdd;
+  padding: 7% 13%;
+  text-align: center;
+}
+#teachers p
+{
+   line-height: 2;
+}
+
+.sas
+{
+  width: 40%;
+}
+#shashank
+{
+  padding-top: 8%;
+}
+#shashank p
+{
+   padding-top: 5%;
+
+}
+.var
+{
+   padding-top: 3rem;
+   padding-bottom: 4%;
+   width: 40%;
+}
+#abhinav
+{
+   padding-top: 12%;
+}
+
+.ab
+{
+
+   border-radius: 50%;
+   width: 40%;
+}
+@media (max-width: 1024px)
+ {
+   .download-button1
+   {
+     padding-left: 300px;
+     padding-right: 300px;
+     margin: 0;
+   }
+   .download-button2
+   {
+      padding-left: 300px;
+     padding-right: 300px;
+     margin: 0;
+   }
+   .ab
+   {
+     padding-bottom: 5%;
+   }
+}
